@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISSERTATION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=ecg_heart" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            font-family: "Faculty Glyphic", sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 32
+        }
+
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        body.dark-mode footer {
+            background-color: #1e1e1e;
+            color: #b0b0b0;
+        }
+        body.dark-mode .card {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        
+        body.dark-mode .accordion-button {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        body.dark-mode .btn-primary {
+            background-color: #5c6bc0;
+            border-color: #5c6bc0;
+        }
+        
+        /* Light mode footer */
+        footer {
+            height: 200px;
+            background-color: blanchedalmond;
+        }
+
+        /* .about{
+            margin-left: 20vh;
+            margin-right: 20vh;
+        } */
+
+        @media(min-width: 430px){
+            .about{
+                margin-left: 20vh;
+                margin-right: 20vh;
+            }
+        }
+
+        @media(min-width: 700px) and (max-width: 1200px){
+            .about{
+                margin-left: 10vh;
+                margin-right: 10vh;
+            }
+        }
+
+        @media(max-width: 400px){
+            .about{
+                margin: none;
+            }
+
+            .blockquotetext{
+                font-size: 12px;
+            }
+        }
+
+        footer{
+            height: 200px;
+            background-color: blanchedalmond;
+        }
+
+        i{
+            margin: 1vh;
+        }
+
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_balance" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=account_balance" />
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatbox {
+    padding: 10px;
+    height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bot-message, .user-message {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.bot-message {
+    background-color: #e0f7fa;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #dcedc8;
+    align-self: flex-end;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#userInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+                
+                <span>DISSERTATION</span>
+            </span>
+        </div>
+    </nav>
+    <div class="chat-container">
+        <div id="chatbox">
+            <div class="bot-message">Hello! Welcome to Recommendation and Automation for Customer (RAC) System to Fetch Knowledge Article</div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Type your message here..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        const chatbox = document.getElementById("chatbox");
+
+async function sendMessage() {
+    const userInput = document.getElementById("userInput");
+    const userMessage = userInput.value.trim();
+
+    if (userMessage === "") return;
+
+    // Add user message to chat
+    addMessage(userMessage, "user");
+
+    // Fetch bot response
+    const botResponse = await getBotResponse(userMessage);
+    addMessage(botResponse, "bot");
+
+    // Clear input
+    userInput.value = "";
+}
+
+function addMessage(message, sender) {
+    const messageDiv = document.createElement("div");
+    messageDiv.className = sender === "bot" ? "bot-message" : "user-message";
+    messageDiv.textContent = message;
+    chatbox.appendChild(messageDiv);
+
+    // Scroll to the bottom of the chatbox
+    chatbox.scrollTop = chatbox.scrollHeight;
+}
+
+async function getBotResponse(input) {
+    try {
+        const response = await fetch("http://localhost:8584/chat", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ message: input })
+        });
+
+        if (!response.ok) {
+            console.error(`HTTP Error: ${response.status}`);
+            return "I'm sorry, I couldn't process your request. Please try again.";
+        }
+
+        const data = await response.json();
+        console.log("Bot response:", data.reply); // Debug log
+        return data.reply || "I'm sorry, I couldn't provide an answer. Please ask something else.";
+    } catch (error) {
+        console.error("Error fetching response:", error);
+        return "I'm having trouble connecting to the server. Please try again later.";
+    }
+}
+
+    </script>
+</body>
+</html>
